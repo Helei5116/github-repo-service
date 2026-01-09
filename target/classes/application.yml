@@ -1,0 +1,24 @@
+spring:
+  # H2 数据库配置
+  datasource:
+    url: jdbc:h2:mem:github_repo_db
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true # 启用H2控制台，访问 http://localhost:8080/h2-console
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop # 启动时创建表，关闭时删除
+    show-sql: true # 打印SQL语句（调试用）
+
+# GitHub API 配置
+github:
+  api:
+    base-url: https://api.github.com/repos
+
+# 服务端口
+server:
+  port: 8080
