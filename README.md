@@ -6,4 +6,5 @@ Testing Framework: JUnit 4
 
 2、Request Example
 http://localhost:8080/repositories/spring-projects/spring-boot
+http://localhost:8080/repositories/Helei5116/github-repo-service
 
